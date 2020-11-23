@@ -1,6 +1,6 @@
 package base;
 
-public class Point {
+public final class Point {
 	private int x;
 	protected int y;
 
@@ -13,4 +13,11 @@ public class Point {
 		return "Point d'abcsisse : " + x + " et d'ordonnées : " + y;
 	}
 
+	public int getX() {
+		return x;
+	}
+
+	public int getY() {
+		return y;
+	}
 }

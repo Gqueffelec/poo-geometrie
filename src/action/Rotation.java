@@ -1,5 +1,5 @@
 package action;
 
-public class Rotation {
-
+public interface Rotation {
+	public void rotation();
 }

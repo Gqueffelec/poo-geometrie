@@ -1,10 +1,11 @@
 package base;
 
+import action.Translation;
 import figure.Quadrilatere;
 import figure.Segment;
 import figure.Triangle;
 
-public abstract class Figure {
+public abstract class Figure implements Translation {
 	protected Point[] coordonnees;
 	protected int color;
 
@@ -51,6 +52,18 @@ public abstract class Figure {
 				forme + " de couleur : " + this.color + " et constitué de " + this.coordonnees.length + "points : ");
 		for (Point point : this.coordonnees) {
 			System.out.print("  >" + point.toString() + "\n");
+		}
+	}
+
+	@Override
+	public void translation(int x, int y) {
+		for (Point point : coordonnees) {
+			int newX = point.getX() + x;
+			int newY = point.getY() + y;
+			System.out.println("Translation du point : ");
+			System.out.println("ancienne abscisse " + point.getX() + " nouvelle abscisse " + newX);
+			System.out.println("ancienne ordonnées " + point.getY() + " nouvelle ordonnées " + newY);
+			point = new Point(newX, newY);
 		}
 	}
 }

@@ -1,5 +1,5 @@
 package action;
 
-public class Translation {
-
+public interface Translation {
+	public void translation(int x, int y);
 }
