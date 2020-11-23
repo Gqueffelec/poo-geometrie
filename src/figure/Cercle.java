@@ -13,4 +13,8 @@ public class Cercle {
 		this.rayon = rayon;
 	}
 
+	public void affiche() {
+		System.out.println("Le cercle de couleur : " + color + ", de rayon " + rayon + " et constitué de 1 points : ");
+		System.out.println("  >" + coordonnees.toString());
+	}
 }

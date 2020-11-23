@@ -12,4 +12,11 @@ public class Triangle {
 		coordonnees[2] = new Point(x3, y3);
 		this.color = color;
 	}
+
+	public void affiche() {
+		System.out.println("Le triangle de couleur : " + color + " et constitué de 3 points : ");
+		for (Point point : coordonnees) {
+			System.out.print("  >" + point.toString() + "\n");
+		}
+	}
 }

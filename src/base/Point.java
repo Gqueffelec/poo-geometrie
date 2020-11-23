@@ -9,4 +9,8 @@ public class Point {
 		this.y = y;
 	}
 
+	public String toString() {
+		return "Point d'abcsisse : " + x + " et d'ordonnées : " + y;
+	}
+
 }

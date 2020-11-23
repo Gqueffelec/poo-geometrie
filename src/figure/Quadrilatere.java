@@ -14,4 +14,10 @@ public class Quadrilatere {
 		this.color = color;
 	}
 
+	public void affiche() {
+		System.out.println("Le triangle de couleur : " + color + " et constitué de 4 points : ");
+		for (Point point : coordonnees) {
+			System.out.print("  >" + point.toString() + "\n");
+		}
+	}
 }
