@@ -7,6 +7,7 @@ public class Quadrilatere {
 	private Point[] coordonnees;
 
 	public Quadrilatere(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4, int color) {
+		coordonnees = new Point[4];
 		coordonnees[0] = new Point(x1, y1);
 		coordonnees[1] = new Point(x2, y2);
 		coordonnees[2] = new Point(x3, y3);
