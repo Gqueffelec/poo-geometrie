@@ -1,6 +1,5 @@
 package figure;
 
-<<<<<<< HEAD
 import base.Point;
 
 public class Segment {
@@ -20,8 +19,5 @@ public class Segment {
 			System.out.print("  >" + point.toString() + "\n");
 		}
 	}
-=======
-public class Segment {
 
->>>>>>> 82b686e936ef1b00385a5133f6c9de40668b947e
 }

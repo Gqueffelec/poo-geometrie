@@ -1,6 +1,5 @@
 package figure;
 
-<<<<<<< HEAD
 import base.Point;
 
 public class Cercle {
@@ -18,8 +17,5 @@ public class Cercle {
 		System.out.println("Le cercle de couleur : " + color + ", de rayon " + rayon + " et constitué de 1 points : ");
 		System.out.println("  >" + coordonnees.toString());
 	}
-=======
-public class Cercle {
 
->>>>>>> 82b686e936ef1b00385a5133f6c9de40668b947e
 }
