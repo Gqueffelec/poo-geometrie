@@ -1,21 +1,20 @@
 package figure;
 
-import base.Point;
+import base.Figure;
 
-public class Cercle {
-	private int color;
-	private Point coordonnees;
+public class Cercle extends Figure {
 	private int rayon;
 
 	public Cercle(int x1, int y1, int color, int rayon) {
-		coordonnees = new Point(x1, y1);
-		this.color = color;
+		super(x1, y1, color);
 		this.rayon = rayon;
 	}
 
+	@Override
 	public void affiche() {
-		System.out.println("Le cercle de couleur : " + color + ", de rayon " + rayon + " et constitué de 1 points : ");
-		System.out.println("  >" + coordonnees.toString());
+		System.out.println(
+				"Le cercle de couleur : " + this.color + ", de rayon " + this.rayon + " et constitué de 1 points : ");
+		System.out.println("  >" + this.coordonnees[0].toString());
 	}
 
 }
